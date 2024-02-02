@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>YouTube embedder</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <p>YouTube link below:</p>
+      <input size="50" id="YTLinkInput" type="text">
+      <p>Must be written as: https://www.youtube.com/watch?v=...</p>
+    </header>
+    
+    <main id="main">
+      <p>Advanced options: [WIP]</p>
+      <form>
+        <label>Resolution X:</label>
+        <input id="resX">
+        <br>
+        <br>
+        <label>Resolution Y:</label>
+        <input id="resY">
+      </form>
+      <br>
+      <button onclick="createEmbed(true)" id="YTLinkButton">embed</button>
+      <br>
+      <br>
+      <button onclick="createEmbed(false)" id="YTLinkButtonNoCookies">nocookie-embed</button>
+    </main>
+    
+    <footer>
+      <p>&copy;Gayan Meras 2023</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
